@@ -5,6 +5,16 @@
   --white: #fff;
 }
 
+body {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 html, body {
   height: 100vh;
   margin: 0;
@@ -340,8 +350,15 @@ html, body {
 
 /* Modern Contact Page Styles */
 .contact-section {
-  padding: 4rem 0 2rem 0;
+  padding: 5rem 0 5rem 0;
   background: var(--bg);
+}
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 2.5rem;
 }
 
 .contact-flex {
@@ -420,6 +437,35 @@ html, body {
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
+}
+
+.contact-faq {
+  margin-top: 3rem;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-faq h3 {
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.contact-faq ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-faq li {
+  margin-bottom: 1.2rem;
+  font-size: 1.08rem;
+  color: #333;
 }
 
 .form-row {
@@ -647,6 +693,77 @@ html, body {
   letter-spacing: 1px;
 }
 
+.booking-intro {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+.booking-benefits {
+  margin: 3rem auto 2rem auto;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 600px;
+}
+
+.booking-benefits h3 {
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.booking-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 1.08rem;
+}
+
+.booking-benefits li {
+  margin-bottom: 1.1rem;
+  padding-left: 1.2em;
+  position: relative;
+}
+.booking-benefits li:before {
+  content: "✓";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.booking-faq {
+  margin: 2.5rem auto 0 auto;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 600px;
+}
+
+.booking-faq h3 {
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.booking-faq ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking-faq li {
+  margin-bottom: 1.2rem;
+  font-size: 1.08rem;
+  color: #333;
+}
+
 .booking-form {
   background: var(--white);
   border-radius: 1rem;
@@ -752,4 +869,63 @@ html, body {
   box-shadow: 0 12px 36px rgba(44, 62, 80, 0.18), 0 2px 12px rgba(44,62,80,0.10);
   z-index: 2;
   border-color: var(--accent);
+}
+
+/* Hamburger button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  margin-left: auto;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  height: 4px;
+  width: 28px;
+  background: var(--primary);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile nav styles */
+@media (max-width: 700px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 70vw;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: -2px 0 16px rgba(44,62,80,0.08);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 2rem 2rem 2rem;
+    transition: right 0.3s;
+    z-index: 15;
+  }
+  .header nav.open {
+    right: 0;
+  }
+  .header nav a {
+    display: block;
+    margin: 1.2rem 0;
+    font-size: 1.2rem;
+  }
+  .header .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 }

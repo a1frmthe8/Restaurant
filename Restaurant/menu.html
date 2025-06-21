@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Explore the exquisite menu of Bistro Modern, featuring a selection of starters, main courses, and desserts crafted with fresh ingredients.">
+    <meta name="keywords" content="Bistro Modern, menu, restaurant menu, fine dining, modern cuisine, starters, main courses, desserts">
     <title>Menu | Bistro Modern</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="site-wrapper">
     <header class="header">
       <div class="container">
         <a href="index.html" class="logo">Bistro Modern</a>
+
+          <button class="mobile-menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
         <nav>
           <a href="menu.html" class="active">Menu</a>
           <a href="about.html">About</a>
@@ -103,6 +115,65 @@
   </li>
 </ul>
           </div>
+          <div class="menu-category">
+  <h3>Cocktails</h3>
+  <ul>
+    <li>
+      <span>Modern Martini</span>
+      <span class="menu-price">$11</span>
+      <p class="menu-desc">Gin, dry vermouth, house-infused olive brine, lemon twist.</p>
+    </li>
+    <li>
+      <span>Signature Old Fashioned</span>
+      <span class="menu-price">$12</span>
+      <p class="menu-desc">Bourbon, bitters, orange, house-made syrup, cherry.</p>
+    </li>
+    <li>
+      <span>Seasonal Spritz</span>
+      <span class="menu-price">$10</span>
+      <p class="menu-desc">Aperol, prosecco, soda, fresh fruit garnish.</p>
+    </li>
+    <li>
+      <span>Modern Mule</span>
+      <span class="menu-price">$10</span>
+      <p class="menu-desc">Vodka, ginger beer, lime, fresh mint.</p>
+    </li>
+    <li>
+      <span>Espresso Martini</span>
+      <span class="menu-price">$12</span>
+      <p class="menu-desc">Vodka, espresso, coffee liqueur, vanilla syrup.</p>
+    </li>
+  </ul>
+</div>
+
+<!-- Wines -->
+<div class="menu-category">
+  <h3>Wines</h3>
+  <ul>
+    <li>
+      <span>House Red Wine (Glass/Bottle)</span>
+      <span class="menu-price">$8/$28</span>
+      <p class="menu-desc">Rich, smooth, and food-friendly.</p>
+    </li>
+    <li>
+      <span>House White Wine (Glass/Bottle)</span>
+      <span class="menu-price">$8/$28</span>
+      <p class="menu-desc">Crisp, refreshing, and aromatic.</p>
+    </li>
+  </ul>
+</div>
+
+<!-- Beers -->
+<div class="menu-category">
+  <h3>Beers</h3>
+  <ul>
+    <li>
+      <span>Craft Beer</span>
+      <span class="menu-price">$7</span>
+      <p class="menu-desc">Selection of local and imported brews.</p>
+    </li>
+  </ul>
+</div>
         </div>
       </div>
     </section>
@@ -113,5 +184,7 @@
       </div>
     </footer>
   </div>
+  <script src="assets/Mobile_menu.js"></script>
+  <script src="assets/Open.js"></script>
 </body>
 </html>

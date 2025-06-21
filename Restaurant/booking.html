@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Book a table at Bistro Modern for an unforgettable dining experience. Fill out the form to reserve your spot.">
+    <meta name="keywords" content="Bistro Modern, book a table, restaurant booking, dining reservation, modern cuisine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Table | Bistro Modern</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="site-wrapper">
     <header class="header">
       <div class="container">
         <a href="index.html" class="logo">Bistro Modern</a>
+
+        <button class="mobile-menu-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <nav>
           <a href="menu.html">Menu</a>
           <a href="about.html">About</a>
@@ -20,31 +32,52 @@
     </header>
 
     <section class="booking-section">
-      <div class="container">
-        <h2>Book a Table</h2>
-        <form class="booking-form" action="#" method="POST">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-row">
-            <input type="date" name="date" required>
-            <input type="time" name="time" required>
-          </div>
-          <div class="form-row">
-            <input type="number" name="guests" min="1" max="20" placeholder="Guests" required>
-          </div>
-          <textarea name="requests" placeholder="Special Requests (optional)" rows="3"></textarea>
-          <button type="submit" class="btn">Book Now</button>
-        </form>
+  <div class="container">
+    <h2>Book a Table</h2>
+    <p class="booking-intro">
+      Reserve your table at Bistro Modern for a memorable dining experience. Whether it’s a romantic dinner, a family celebration, or a business lunch, we look forward to welcoming you!
+    </p>
+    <form class="booking-form" action="#" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
       </div>
-    </section>
-
+      <div class="form-row">
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+      </div>
+      <div class="form-row">
+        <input type="number" name="guests" min="1" max="20" placeholder="Guests" required>
+      </div>
+      <textarea name="requests" placeholder="Special Requests (optional)" rows="3"></textarea>
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+    <div class="booking-benefits">
+      <h3>Why Book With Us?</h3>
+      <ul>
+        <li>Easy online reservations</li>
+        <li>Special requests welcome</li>
+        <li>Private dining & group bookings available</li>
+        <li>Fresh, seasonal menu and signature cocktails</li>
+      </ul>
+    </div>
+    <div class="booking-faq">
+      <h3>Frequently Asked Questions</h3>
+      <ul>
+        <li><strong>Can I book for a large group?</strong><br>Yes, we welcome group bookings and private events. Please mention your group size in the special requests.</li>
+        <li><strong>How will I know my booking is confirmed?</strong><br>We’ll send you a confirmation email after you submit your booking request.</li>
+        <li><strong>Can I change or cancel my reservation?</strong><br>Absolutely! Just reply to your confirmation email or call us directly.</li>
+      </ul>
+    </div>
+  </div>
+</section>
     <footer class="footer">
       <div class="container">
         <p>&copy; 2025 Bistro Modern. All rights reserved.</p>
       </div>
     </footer>
   </div>
+  <script src="assets/Mobile_menu.js"></script>
+  <script src="assets/Open.js"></script>
 </body>
 </html>

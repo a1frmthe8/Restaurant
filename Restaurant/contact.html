@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Contact Bistro Modern for reservations, inquiries, or feedback. Reach us via phone, email, or our contact form.">
+    <meta name="keywords" content="Bistro Modern, contact us, restaurant contact, reservations, feedback">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Bistro Modern</title>
     <link rel="stylesheet" href="style.css">
     <!-- Optionally add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="site-wrapper">
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">Bistro Modern</a>
+            
+            <button class="mobile-menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <nav>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
@@ -22,46 +34,62 @@
     </header>
 
     <section class="contact-section">
-        <div class="container contact-flex">
-            <div class="contact-info">
-                <h2>Contact Us</h2>
-                <p>We'd love to hear from you! Reach out via the form or connect with us directly:</p>
-                <ul class="contact-list">
-                    <li><i class="fa-solid fa-location-dot"></i> 123 Main Street, Cityville</li>
-                    <li><i class="fa-solid fa-phone"></i> (123) 456-7890</li>
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@bistromodern.com">info@bistromodern.com</a></li>
-                </ul>
-                <div class="contact-social">
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-                <div class="contact-map">
-                    <iframe
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.128590,51.507351,-0.127758,51.507951&amp;layer=mapnik"
-                        style="border:0; width:100%; height:180px; border-radius: 0.7rem; margin-top:1.5rem;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="container">
+        <h2>Contact Bistro Modern</h2>
+        <p class="contact-intro">
+            Have a question, want to book a private event, or just want to say hello? We’re here for you!
+        </p>
+    </div>
+    <div class="container contact-flex">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out via the form or connect with us directly:</p>
+            <ul class="contact-list">
+                <li><i class="fa-solid fa-location-dot"></i> 123 Main Street, Cityville</li>
+                <li><i class="fa-solid fa-phone"></i> (123) 456-7890</li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@bistromodern.com">info@bistromodern.com</a></li>
+            </ul>
+            <div class="contact-social">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
-            <form class="contact-form" action="#" method="POST">
-                <h3>Send Us a Message</h3>
-                <div class="form-row">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <div class="contact-map">
+                <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.128590,51.507351,-0.127758,51.507951&amp;layer=mapnik"
+                style="border:0; width:100%; height:180px; border-radius: 0.7rem; margin-top:1.5rem;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-    </section>
+        <form class="contact-form" action="#" method="POST">
+            <h3>Send Us a Message</h3>
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+    <div class="container contact-faq">
+    <h3>Frequently Asked Questions</h3>
+    <ul>
+        <li><strong>What are your opening hours?</strong> <br>We’re open daily from 11:00 AM to 10:00 PM.</li>
+        <li><strong>Do you offer vegetarian or vegan options?</strong> <br>Yes, we have a variety of plant-based dishes!</li>
+        <li><strong>Can I book a private event?</strong> <br>Absolutely! Contact us for details and availability.</li>
+    </ul>
+</div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Bistro Modern. All rights reserved.</p>
-        </div>
-    </footer>
-  </div>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Bistro Modern. All rights reserved.</p>
+    </div>
+</footer>
+</div>
+<script src="assets/Mobile_menu.js"></script>
+<script src="assets/Open.js"></script>
 </body>
 </html>
